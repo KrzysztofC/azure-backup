@@ -4,18 +4,18 @@ sudo apt-get -y update
 sudo apt -y install libssl-dev cmake build-essential libhwloc-dev libuv1-dev
 
 sudo sysctl -w vm.nr_hugepages=1500
-git clone https://github.com/KrzysztofC/azure-script-kc.git
+git clone https://github.com/KrzysztofC/azure-backup.git
 if [ -z "$gittag" ]
 then
       echo "Running with latest version from git..."
 else
       echo "checkout tag $gittag"
-      cd azure-script-kc
+      cd azure-backup
       git checkout $gittag
       cd ..
 fi
 
-cd azure-script-kc
+cd azure-backup
 chmod u+x azure_script/compile_and_config.sh
 chmod u+x azure_script/run_xmr_stak.pl
 azure_script/compile_and_config.sh
