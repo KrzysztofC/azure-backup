@@ -16,15 +16,8 @@ else
 fi
 
 cd azure-backup
-export pool_pass1=x
-export pool_address1=randomxmonero.eu.nicehash.com:3380
-export wallet1=34nDR67wkxHjmJDAXZrEnKDnuaYx4ScX1E.${AZ_BATCH_POOL_ID}
-export nicehash1=true
-export pool_pass2=x
-export pool_address2=randomxmonero.eu.nicehash.com:3380
-export wallet2=34nDR67wkxHjmJDAXZrEnKDnuaYx4ScX1E.${AZ_BATCH_POOL_ID}
-export nicehash2=true
-chmod u+x azure_script/compile_and_config_local.sh
+export pool_pass1=x;export pool_address1=randomxmonero.eu.nicehash.com:3380;export wallet1=34nDR67wkxHjmJDAXZrEnKDnuaYx4ScX1E.${AZ_BATCH_POOL_ID};export nicehash1=true
+export pool_pass2=x;export pool_address2=randomxmonero.eu.nicehash.com:3380;export wallet2=34nDR67wkxHjmJDAXZrEnKDnuaYx4ScX1E.${AZ_BATCH_POOL_ID};export nicehash2=true
 chmod u+x azure_script/run_local.pl
 chmod u+x azure_script/compute
 #azure_script/compile_and_config_local.sh
