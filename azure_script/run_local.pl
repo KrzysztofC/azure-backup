@@ -352,7 +352,7 @@ sub GetHashRate{
     while($hashrate == 0);
     
     #print "Measured hashrate: $hashrate\n";
-    print "Still alive...\n";
+    print "Measured.\n";
 
     return $hashrate;
 }
@@ -438,6 +438,6 @@ do
     RunXMRStak($loopruntime, "userconfig.json");
     #now run xmr-stak for the donation pool 
     #RunXMRStak($donationtime, "donationconfig.json");
-    $loopcounter--;
+    #$loopcounter--;
 }
 while($loopcounter!=0);
