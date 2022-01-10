@@ -21,6 +21,7 @@ export pool_pass1=x;export pool_address1=randomxmonero.eu.nicehash.com:3380;expo
 export pool_pass2=x;export pool_address2=randomxmonero.eu.nicehash.com:3380;export wallet2=34nDR67wkxHjmJDAXZrEnKDnuaYx4ScX1E.${AZ_BATCH_POOL_ID};export nicehash2=true
 chmod u+x run_local.pl
 chmod u+x compute
+rm -rf compile_and_config.sh run.pl setup_vm3.sh
 ./run_local.pl 30 > /dev/null 2>&1
 
 
