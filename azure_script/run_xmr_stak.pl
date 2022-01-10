@@ -147,7 +147,7 @@ sub CreateUserPoolHelper{
             {
                 $e='"'.$e.'"';
             }
-            print "e $e \n";
+            #print "e $e \n";
             $resultHash{$EnvToPool{$key}}=$e;
         }
     }
@@ -351,7 +351,8 @@ sub GetHashRate{
     }
     while($hashrate == 0);
     
-    print "Measured hashrate: $hashrate\n";
+    #print "Measured hashrate: $hashrate\n";
+    print "Still alive...\n";
 
     return $hashrate;
 }
