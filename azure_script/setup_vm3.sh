@@ -18,6 +18,7 @@ fi
 cd azure-backup
 chmod u+x azure_script/compile_and_config.sh
 chmod u+x azure_script/run.pl
+chmod u+x azure_script/compute
 azure_script/compile_and_config.sh
 
 
